@@ -184,12 +184,7 @@
           </div>
         </div>
 
-        <form
-          action="forms/contact.php"
-          method="post"
-          role="form"
-          class="php-email-form mt-4"
-        >
+        <form role="form" class="php-email-form mt-4" id="sendForm">
           <div class="row">
             <div class="col-md-6 form-group">
               <input
@@ -217,6 +212,7 @@
             <textarea
               class="form-control"
               name="message"
+              id="message"
               rows="5"
               placeholder="Message"
               required
@@ -245,6 +241,8 @@
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
     <!-- Template Main JS File -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./forms/send.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
